@@ -33,16 +33,19 @@ var event = {
 }
 
 
-function tableCreate(){
+function tableCreate(day){
     var body = document.body,
         tbl  = document.createElement('table');
     tbl.style.width  = '100px';
     tbl.style.border = '1px solid black';
 
-    for(var i = 0; i < 3; i++){
+    for(var stream in day ){
         var tr = tbl.insertRow();
-        for(var j = 0; j < 2; j++){
-            if(i == 2 && j == 1){
+        var streamName = tr.insertCell();
+            td.appendChild(document.createTextNode(urlStart + stream));
+            td.style.border = '1px solid black';
+        for(var time in day[stream]){
+            if(true){
                 break;
             } else {
                 var td = tr.insertCell();
@@ -57,4 +60,4 @@ function tableCreate(){
     body.appendChild(tbl);
 }
 
-tableCreate();
+tableCreate(event.friday);
