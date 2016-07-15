@@ -5,7 +5,7 @@ var friLocalTimes = [];
 var sunLocalTimes = [];
 
 for(var i = 0; i < timeSlots.length; i++) {
-    friLocalTimes.push(new Date(Date.parse('15 July 2016' + timeSlots[i] +':00:00 PDT')));
+    friLocalTimes.push(new Date(Date.parse('15 July 2016 ' + timeSlots[i] +':00:00 PDT')));
 }
 
 console.log(friLocalTimes);
