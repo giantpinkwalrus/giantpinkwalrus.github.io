@@ -42,8 +42,8 @@ function tableCreate(day){
     for(var stream in day ){
         var tr = tbl.insertRow();
         var streamName = tr.insertCell();
-            td.appendChild(document.createTextNode(urlStart + stream));
-            td.style.border = '1px solid black';
+            streamName.appendChild(document.createTextNode(urlStart + stream));
+            streamName.style.border = '1px solid black';
         for(var time in day[stream]){
             if(true){
                 break;
