@@ -29,7 +29,7 @@ var event = {
         },
         capcomfighters: {
             '8': 'Street Fighter V'
-        }
+        },
     endTime: 24;
     },
 }
