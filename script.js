@@ -1,5 +1,12 @@
-new Date(Date.parse('15 July 2016 08:00:00 PDT'));
-var timeSlots = [8, 10, 12, 14, 16, 18, 20, 22, 24];
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue.js!'
+  }
+})
+
+
+var timeSlots = ['8', '10', '12', '14', '16', '18', '20', '22'];
 var sunTimeSlots = [];
 var friLocalTimes = [];
 var sunLocalTimes = [];
@@ -29,7 +36,33 @@ var event = {
         },
         capcomfighters: {
             '8': 'Street Fighter V'
-        },
-    endTime: 24
+        }
     },
 }
+
+
+function tableCreate(){
+    var body = document.body,
+        tbl  = document.createElement('table');
+    tbl.style.width  = '100px';
+    tbl.style.border = '1px solid black';
+
+    for(var i = 0; i < 3; i++){
+        var tr = tbl.insertRow();
+        for(var j = 0; j < 2; j++){
+            if(i == 2 && j == 1){
+                break;
+            } else {
+                var td = tr.insertCell();
+                td.appendChild(document.createTextNode('Cell'));
+                td.style.border = '1px solid black';
+                if(i == 1 && j == 1){
+                    td.setAttribute('rowSpan', '2');
+                }
+            }
+        }
+    }
+    body.appendChild(tbl);
+}
+
+tableCreate();
