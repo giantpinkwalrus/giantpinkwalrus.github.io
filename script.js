@@ -1,11 +1,3 @@
-var app = new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue.js!'
-  }
-})
-
-
 var timeSlots = ['8', '10', '12', '14', '16', '18', '20', '22'];
 var sunTimeSlots = [];
 var friLocalTimes = [];
