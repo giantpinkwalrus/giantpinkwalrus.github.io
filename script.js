@@ -30,6 +30,6 @@ var event = {
         capcomfighters: {
             '8': 'Street Fighter V'
         },
-    endTime: 24;
+    endTime: 24
     },
 }
